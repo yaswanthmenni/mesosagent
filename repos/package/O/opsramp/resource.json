@@ -1,0 +1,14 @@
+{
+  "assets": {
+    "container": {
+      "docker": {
+        "agent": "yaswanthm/opsramp-agent:latest"
+      }
+    }
+  },
+  "images": {
+    "icon-small": "https://www.dropbox.com/s/72t85l107vhtg5o/opsramp-icon-large.png",
+    "icon-medium": "https://www.dropbox.com/s/69j9z0frsk3rh6f/opsramp-icon-medium.png",
+    "icon-large": "https://www.dropbox.com/s/72t85l107vhtg5o/opsramp-icon-large.png"
+  }
+}

@@ -1,0 +1,57 @@
+{
+    "properties": {
+        "opsramp": {
+            "description": "OpsRamp Agent configuration",
+            "properties": {
+            	"app_server": {
+                    "description": "Your OpsRamp Cloud.",
+                    "default": "shivalik.opsramp.net",
+                    "type": "string"
+                },
+                "api_key": {
+                    "description": "Your OpsRamp API key.",
+                    "type": "string"
+                },
+                "api_secret": {
+   
+                    "description": "Your OpsRamp API secret.",
+                    "type": "string"
+                },
+                "cluster_id": {
+   
+                    "description": "OpsRamp Cluster ID of mesos.",
+                    "type": "string"
+                },
+                "instances": {
+                    "default": 1,
+                    "description": "Number of Marathon instances to run.",
+                    "minimum": 1,
+                    "type": "integer"
+                },
+                "cpus": {
+                    "default": 0.05,
+                    "description": "CPU shares to allocate to each Marathon instance.",
+                    "minimum": 0.0,
+                    "type": "number"
+                },
+                "mem": {
+                    "default": 256.0,
+                    "description": "Memory (MB) to allocate to each Marathon task.",
+                    "minimum": 256.0,
+                    "type": "number"
+                },
+         
+            "required": [
+                "api_key",
+                "api_secret",
+                "app_server"
+                ],
+            "type": "object"
+        }
+    },
+    "required": [
+        "opsramp"
+    ],
+    "type": "object"
+}
+}
